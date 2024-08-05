@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Web Page</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="web.css">
+
+<nav>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./resume.html">Resume</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+    </ul>
+</nav>
+
+<body> 
+    <h3>Basic Toon Shading via WebGL</h3>
+    <canvas id="canvas" width="600" height="600"> 
+        Your browser does not support HTML5 
+    </canvas> 
+    <div class="controls">
+        <div>
+            <label for="rSlider">Red:</label>
+            <input type="range" id="rSlider" class="slider" min="0" max="255" value="255">
+        </div>
+        <div>
+            <label for="gSlider">Green:</label>
+            <input type="range" id="gSlider" class="slider" min="0" max="255" value="0">
+        </div>
+        <div>
+            <label for="bSlider">Blue:</label>
+            <input type="range" id="bSlider" class="slider" min="0" max="255" value="0">
+        </div>
+        <div id="colorDisplay"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+    <script src="app.js"></script> 
+</body>
+
+</html>
