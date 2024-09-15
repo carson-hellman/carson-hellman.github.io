@@ -73,7 +73,7 @@ canvas {
 .grid {
     display: grid;
     grid-template-columns: repeat(3,minmax(0, 1fr));
-    row-gap: 50px;
+    row-gap: 0px;
     overflow: hidden;
     text-align: center;
     font-size: large;
