@@ -6,26 +6,34 @@
 <link type="image/png" sizes="16x16" rel="icon" href="./icons8-resume-website-16.png">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="web.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <nav>
 <ul>
     <li><a class="selected" href="./index.html">Home</a></li>
-    <li><a href="./resume.html">Resume</a></li>
     <li><a href="./projects.html">Projects</a></li>
+    <li style="float: right;"><a href="./Carson_Hellman_Resume.pdf" download=""><i class="fa fa-file-text-o"></i></a></li>
+    <li style="float: right;"><a href="https://github.com/carson-hellman"><i class="fa fa-github"></i></a></li>
+    <li style="float: right;"><a href="https://www.linkedin.com/in/carson-hellman/"><i class="fa fa-linkedin-square"></i></a></li>
+    <li style="float: right;"><a href="mailto:carsonhellman@outlook.com"><i class="fa fa-envelope"></i></a></li>
 </ul>
 </nav>
 
 <body>
-    <img class="headshot" alt="Headshot Image" src="./gradImg.jpeg">
-    <div>
-        <h3>Hi, I'm Carson Hellman!</h3>
-        <h4>Welcome to my portfolio website!</h4>
-        <p>Here's a little bit about me:</p>
-        <p>&emsp;I am an aspiring software engineer with a B.S. in computer science from the University of Oregon.</p>
-        <p>&emsp;Some of my hobbies include weightlifting, hiking, camping, and playing video games.</p>
-        <p>&emsp;I love my cat Boots, and here's a sweet picture of him!</p>
-        <img class="smallPhoto" alt="Cat Image" src="cat.JPEG">  
-    </div>
+    <div class="split left">
+        <div class="centered">
+            <img class="headshot" alt="Headshot Image" src="./gradImg.jpeg">
+            <p>Aspiring software engineer with a B.S. in computer science from the University of Oregon.</p>
+            <p>Some of my hobbies include weightlifting, hiking, camping, and playing video games.</p>
+            <p>Here's a sweet picture of my cat Boots!</p>
+            <img class="smallPhoto" alt="Cat Image" src="cat.JPEG">
+        </div>
+      </div>
+      
+      <div class="split right">
+        <img src="resume_image.png" style="max-width: 80%;">
+      </div>
+
 </body>
 
 </html>
