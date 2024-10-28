@@ -17,6 +17,7 @@ body {
     color: rgb(179, 180, 189);
     background-color: rgb(44, 46, 48);
     line-height: 1.5;
+    margin-bottom: 2%;
 }
 
 ul {
@@ -70,7 +71,6 @@ canvas {
     display: grid;
     grid-template-columns: repeat(3,minmax(0, 1fr));
     row-gap: 0px;
-    overflow: hidden;
     text-align: center;
     font-size: large;
 }
@@ -108,7 +108,7 @@ canvas {
 
 .gridItem .gridItemPopUp p{
     position: relative;
-    top: 25%;
+    top: 20%;
     z-index: 0;
 }
 
