@@ -70,7 +70,8 @@ canvas {
 .grid {
     display: grid;
     grid-template-columns: repeat(3,minmax(0, 1fr));
-    row-gap: 0px;
+    row-gap: 1%;
+    column-gap: 1%;
     text-align: center;
     font-size: large;
 }
@@ -104,6 +105,7 @@ canvas {
     z-index: 1;
     background-color: rgb(20, 22, 25);
     color: rgb(88, 166, 255);
+    overflow: hidden;
 }
 
 .gridItem .gridItemPopUp p{
