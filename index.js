@@ -54,7 +54,6 @@ function loadProjects() {
           <div class="gridItemPopUp">
             <h3 class="projectHeader">${project.name}</h3>
             <p style="padding: 1vw;">${project.description}</p>
-            <strong><u>Skills</u></strong>
             <p style="margin: 0;">${project.skills.map(skill => `${skill}<br/>`).join("")}</p>
           </div>
         </div>
