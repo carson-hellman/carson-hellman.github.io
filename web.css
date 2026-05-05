@@ -1,160 +1,144 @@
 nav {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    background-color: rgb(20, 22, 25);
-    overflow: hidden;
-    width: 100%;
-    z-index: 99999;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(20, 22, 25);
+  overflow: hidden;
+  width: 100%;
+  z-index: 99999;
 }
 
 .selected {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 body {
-    padding-top: 45px;
-    color: rgb(179, 180, 189);
-    background-color: rgb(44, 46, 48);
-    line-height: 1.5;
-    margin-bottom: 2%;
-    text-align: center;
+  padding-top: 45px;
+  color: rgb(179, 180, 189);
+  background-color: rgb(44, 46, 48);
+  line-height: 1.5;
+  margin-bottom: 2%;
+  text-align: center;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
 li {
-    float: left;
+  float: left;
 }
 
 li a {
-    list-style-type: none;
-    display: inline-block;
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-    text-decoration: none;
-    color: rgb(179, 180, 189);
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(179, 180, 189);
 }
 
 li a:hover {
-    background-color: gray;
-    color: black;
+  background-color: gray;
+  color: black;
 }
 
 canvas {
-    border: 1px solid black;
+  width: 60%;
+  height: auto;
+  border: 1px solid black;
 }
 
-.controls {
-    position: absolute;
-    margin-left: 10px;
-    display: inline-block;
-}
+/* .controls {
+  position: absolute;
+  margin-left: 10px;
+  display: inline-block;
+} */
 
 .slider {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+  accent-color: white;
 }
 
 #colorDisplay {
-    width: 100px;
-    height: 30px;
-    border: 1px solid black;
-    background-color: red;
+  margin: auto;
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  background-color: red;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3,minmax(0, 1fr));
-    row-gap: 1%;
-    column-gap: 1%;
-    text-align: center;
-    font-size: 2vw;
-    margin-left: 5%;
-    margin-right: 5%;
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0, 1fr));
+  row-gap: 2%;
+  column-gap: 2%;
+  text-align: center;
+  font-size: 2vw;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 5vh;
 }
 
 .gridItem {
-    position: relative;
-    border: 0.5px solid black;
+  position: relative;
+  border: 0.8px solid black;
+  box-shadow: 5px 5px 5px rgba(20, 22, 25, 30%);
 }
 
 .gridItem a {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.gridItem:hover .gridItemPopUp{
-    visibility: visible;
-    border: 1px solid rgb(88, 166, 255);
+.projectHeader {
+  color: rgb(88, 166, 255);
 }
 
-.gridItem .gridItemPopUp{
-    visibility: hidden;
-    /* position: absolute; */
-    height: 80%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: rgb(20, 22, 25);
-    color: rgb(88, 166, 255);
-    overflow: hidden;
-    padding: 10%;
+.gridItem:hover .gridItemPopUp {
+  visibility: visible;
+  border: 1px solid rgb(88, 166, 255);
 }
 
-.gridItem .gridItemPopUp *{
-    position: relative;
-    font-size: 1.5vw;
-    top: 20%;
-    z-index: 0;
+.gridItem .gridItemPopUp {
+  visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgb(20, 22, 25);
+  color: rgb(88, 166, 255);
+  overflow: hidden;
 }
 
+/* gives pleasant padding to photos */
 .gridItem img {
-    margin: auto;
-    max-width: 80%;
-    max-height: 80%;
+  max-width: 80%;
+  max-height: 80%;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+/* make hover font to fit comfortably */
+.gridItemPopUp *:not(.projectHeader) {
+  font-size: 1.5vw;
 }
 
-a {
-    color: rgb(88, 166, 255);
-    font-weight: bold;
-    text-decoration: none;
+.gridItemPopUp ul {
+  list-style-type: none;
+  text-align: center;
 }
 
 .headshot {
-    max-width: 25%;
-    max-height: 20%;
-}
-
-.smallPhoto {
-    max-width: 15%;
-    max-height: 10%;
-}
-
-.bio {
-    padding-bottom: 10%;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.scrollLocation {
-    padding-top: 5%;
-    height: 10%;
+  max-width: 25%;
+  max-height: 20%;
 }
